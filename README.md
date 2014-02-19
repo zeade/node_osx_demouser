@@ -1,6 +1,6 @@
-# Control your Mac from a web page
+# DeMouser - control your Mac from a web page
 
-Run a node server on your Mac to control its mouse pointer from a web client, e.g. from your mobile phone. Currently only works on Mac OS X 10.5 and higher. The client browser needs to support Socket.IO based connections (e.g. WebSockets).
+Run a node server on your Mac to control its mouse pointer from a web client, specifically intended for your mobile phone. Currently only works on Mac OS X 10.5 and higher. The client browser needs to support Socket.IO based connections (e.g. WebSockets).
 
 This is a highly functional prototype, but it's still a prototype. Use with caution.
 
@@ -16,11 +16,11 @@ Node and NPM installed from brew:
 
 ## Adding and building project dependencies 
 
-npm packages to install in directory of this project (or globally). `node-gyp` is needed to compile the OS X controller code:
+npm packages to install in directory of this project (or globally). `node-gyp` is needed to compile the OS X controller code for native access to the mouse:
 
     npm install -g node-gyp
     npm install socket.io    # >= 0.9.x
-    npm install express
+    npm install express      # >= 3.x
     npm install sprintf
   
 Create the OS X server-controller module:
