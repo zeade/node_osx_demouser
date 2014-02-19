@@ -41,7 +41,7 @@ Connect on the URL listed on start-up (e.g. 10.0.1.1:9000) with either iOS or An
 
 * __Tap__ = left mouse click = turns screen orange
 * __Tap + hold for 0.5sec__ = left mouse click and hold, toggled to drag = turns screen blue. __Remove finger__ = mouse up
-* __Tap + movement__ = move mouse = green screen
+* __Tap + movement__ = move mouse
 * __2 finger touch + movement__ = wheel scroll (vertical or horizontal) = turns screen purple
 
 ## TODOs
