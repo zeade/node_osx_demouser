@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.my-info {
+  padding: 5px;
+  font-family: Helvetica,Arial,sans-serif;
+}
+.my-touchpad {
+  width: 1920px;
+  height: 1080px;
+  float: left;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+.clear {
+  clear: both;
+}
+#send_url {
+  padding: 10px;
+  margin: 10px;
+  font-size: 36;
+}

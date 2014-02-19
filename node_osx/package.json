@@ -1,0 +1,8 @@
+{ "name" : "osx"
+, "version" : "0.1.0"
+, "description" : "Mac OS X native controls for screen, mouse, etc"
+, "author": "Micah Jaffe <me@micahjaffe.com>"
+, "main": "./lib/osx"
+, "scripts": { "install": "node-gyp configure build"}
+}
+
