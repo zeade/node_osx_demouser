@@ -3,7 +3,7 @@
    ['OS == "mac"', {
       'targets': [
         {
-          'target_name': 'osx_ctl',
+          'target_name': 'osx',
           # 'defines': [ '__MACOSX_CORE__' ],
           # 'direct_dependent_settings': {
           #   'mac_framework_dirs': [ 

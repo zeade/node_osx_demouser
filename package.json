@@ -6,11 +6,11 @@
   "license": "MIT",
   "repository": "https://github.com/zeade/node_osx_demouser",
   "dependencies": {
-    "body-parser": "1.2.2",
-    "errorhandler": "1.0.1",
-    "express": "4.3.2",
+    "body-parser": "1.x",
+    "errorhandler": "1.x",
+    "express": "4.x",
     "mdns": "2.2.0",
-    "socket.io": "1.0.2",
+    "socket.io": "1.x",
     "sprintf": "0.1.3"
   }
 }
