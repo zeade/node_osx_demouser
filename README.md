@@ -19,9 +19,7 @@ Node and NPM installed from brew:
 npm packages to install in directory of this project (or globally). `node-gyp` is needed to compile the OS X controller code for native access to the mouse:
 
     npm install -g node-gyp
-    npm install socket.io    # >= 0.9.x
-    npm install express      # >= 3.x
-    npm install sprintf
+    npm install 
   
 Create the OS X server-controller module:
 

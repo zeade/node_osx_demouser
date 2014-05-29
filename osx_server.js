@@ -7,6 +7,8 @@ var osx = require('./node_osx/build/Release/osx'),
   spawn = require('child_process').spawn,
   sprintf = require('sprintf'),
   express = require('express'),
+  bodyParser = require('body-parser'),
+  errorHandler = require('errorhandler'),
   app = express(),
   srvPort = 9000,
   httpRegex = /^\b(https?):\/\/(?:(\S+?)(?::(\S+?))?@)?([a-z0-9\-.]+)(?::(\d+))?((?:[a-z0-9\-._?,'+\&%$=~*!():@\\]*)+)?/i,
@@ -64,17 +66,12 @@ var screen = osx.screen(),
 // And go...
 
 // Express goodies, this is mostly to make sure we are serving static files out of "./public"
-app.configure(function () {
-  app.use(express.methodOverride());
-  app.use(express.json());
-  app.use(express.urlencoded());  
-  app.use(express.static(__dirname + '/public'));
-  app.use(express.errorHandler({ 
-    'dumpExceptions': true,
-    'showStack': true
-  }));
-  app.use(app.router);
-});
+app.use(bodyParser());
+app.use(express.static(__dirname + '/public'));
+app.use(errorHandler({ 
+  'dumpExceptions': true,
+  'showStack': true
+}));
 
 // Root route
 app.get('/', function (req, res) {
@@ -100,7 +97,7 @@ getIpAddress(function (ipAddr, iface) {
   // console.log('Starting mDNS');
   // ad.start();
 
-  io.set('log level', 1);
+  // io.set('log level', 1);
 
   io.sockets.on('connection', function (socket) {
 
