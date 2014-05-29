@@ -19,16 +19,11 @@ Node and NPM installed from brew:
 npm packages to install in directory of this project (or globally). `node-gyp` is needed to compile the OS X controller code for native access to the mouse:
 
     npm install -g node-gyp
+    npm install ./osx-ctl
     npm install 
-  
-Create the OS X server-controller module:
-
-    cd node_osx
-    node-gyp clean configure build
   
 ## Run server
 
-    cd ..
     node osx_server.js
 
 NOTE: will listen on first network (en) interface with an IP address, change if needed.

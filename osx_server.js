@@ -2,7 +2,7 @@
 //
 // Copyright (c) 2014, Micah Jaffe.
 
-var osx = require('osx'),
+var osx = require('osx-ctl'),
   exec = require('child_process').exec,
   spawn = require('child_process').spawn,
   sprintf = require('sprintf'),

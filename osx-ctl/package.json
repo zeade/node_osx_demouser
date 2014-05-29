@@ -4,9 +4,8 @@
   "description": "Mac OS X native controls for screen, mouse, etc",
   "author": "Micah Jaffe <me@micahjaffe.com>",
   "license": "MIT",
-  "main": "osx",
+  "repository": "https://github.com/zeade/node_osx_demouser/tree/master/osx-ctl",
   "scripts": { "install": "node-gyp clean configure build" },
-  "files": [ "release" ],
-  "dependencies": { "node-gyp": "0.12.2" },
+  "main": "./osx-ctl.js",
   "os": [ "darwin" ]
 }
