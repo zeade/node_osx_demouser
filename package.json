@@ -1,6 +1,12 @@
-{ "name": "node_osx_demouser", 
+{ 
+  "name": "osx-demouser", 
   "version": "0.2.0",
-  "dependencies": { 
+  "author": "Micah Jaffe <me@micahjaffe.com>",
+  "description": "Control your Mac OS X mouse from a webpage",
+  "license": "MIT",
+  "repository": "https://github.com/zeade/node_osx_demouser",
+  "dependencies": {
+    "osx-ctl": "0.1.1",
     "body-parser": "1.2.2",
     "errorhandler": "1.0.1",
     "express": "4.3.2",

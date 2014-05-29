@@ -2,7 +2,7 @@
 //
 // Copyright (c) 2014, Micah Jaffe.
 
-var osx = require('./node_osx/build/Release/osx'),
+var osx = require('osx'),
   exec = require('child_process').exec,
   spawn = require('child_process').spawn,
   sprintf = require('sprintf'),

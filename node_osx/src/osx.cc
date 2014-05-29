@@ -61,7 +61,8 @@ class OSX {
       // Mouse button
       evMouseButton = 0;
       if (args.Length() >= 3 && args[2]->IsInt32()) {
-        if ((evMouseButton = args[2]->ToInteger()->Int32Value()) > 31 || evMouseButton < 0) {
+        evMouseButton = args[2]->ToInteger()->Int32Value();
+        if (evMouseButton > 31) {
           return ThrowException(Exception::TypeError(String::New("GetMouseArgs mouseButton must be 0 to 31")));
         }
       }
